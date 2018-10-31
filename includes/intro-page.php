@@ -20,14 +20,31 @@ if ( defined( 'EP_IS_NETWORK' ) && EP_IS_NETWORK ) {
 <?php require_once( dirname( __FILE__ ) . '/header.php' ); ?>
 
 <div class="wrap intro">
-	<div class="left">
-		<h1><?php esc_html_e( 'A Fast and Flexible Search and Query Engine for WordPress.', 'elasticpress' ); ?></h1>
-		<h2><?php _e( "You're almost there! The plugin is free to use but requires an Elasticsearch server behind-the-scenes. There are tons of services that let you easily get one like <a href='https://qbox.io'>Qbox</a>. If you have a bigger website, 10up provides Elasticsearch hosting via <a href='http://www.elasticpress.io'>ElasticPress.io</a>.", 'elasticpress' ); ?></h2>
+	<h1><?php esc_html_e( 'A Fast and Flexible Search and Query Engine for WordPress.', 'elasticpress' ); ?></h1>
+	<div class="intro-container">
+		<div class="intro-box">
+			<div class="circle red-circle">
+				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>1</p>
+			</div>
+			<h2>Plugin has been installed</h2>
+			<p>You've taken your first step into a faster and more flexible search and query engine for WordPress</p>
+		</div>
+		<div class="intro-box">
+			<div class="circle white-circle">
+				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>2</p>
+			</div>
+			<h2>Setup hosting</h2>
+			<p>The next step is to create an <a href="https://www.elasticpress.io/">ElasticPress.io</a> account or if you want you can <a href="#">set up</a> your own hosting</p>
+		</div>
+		<div class="intro-box">
+			<div class="circle white-circle">
+				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>3</p>
+			</div>
+			<h2>Index your content</h2>
+			<p>Once you have hosting set up you are ready to start customising your content and search <results></results></p>
+		</div>
 	</div>
-	<img class="features-screenshot" src="<?php echo EP_URL . 'images/features-screenshot.png'; ?>">
-</div>
-
-<div class="setup-message">
-	<a class="setup-button setup-button-primary" href="<?php echo esc_url( $setup_url ); ?>"><?php esc_html_e( 'Set Up', 'elasticpress' ); ?></a>
-	<a class="setup-button" href="https://wordpress.org/plugins/elasticpress"><?php esc_html_e( 'Learn More', 'elasticpress' ); ?></a>
+	<div class="setup-message">
+		<a class="setup-button" href="<?php echo esc_url( $setup_url ); ?>"><?php esc_html_e( 'Got hosting? Get Started', 'elasticpress' ); ?></a>
+	</div>
 </div>
