@@ -8,9 +8,12 @@
 
 .wrap h1 {
   color: #626262;
-  line-height: 1.75;
   margin: .5em 0 2em;
   font-weight: 600; }
+
+@media (min-width: 768px) {
+  .wrap h1 {
+    line-height: 1.75; } }
 
 .wrap h2 {
   color: #888;
@@ -335,7 +338,12 @@ h2.ep-list-features {
  * Intro Page
  */
 .intro h2 {
-  padding: 9px 15px 4px 0; }
+  padding: 9px 0 4px 0;
+  line-height: 1.1; }
+
+@media (min-width: 768px) {
+  .intro h2 {
+    line-height: 1.75; } }
 
 .intro h1 {
   text-align: center; }
@@ -424,8 +432,8 @@ h2.ep-list-features {
 
 .setup-message .setup-button {
   border-radius: 10px;
-  background-color: #d73c38;
-  color: #d0adb4;
+  background-color: #E63E3B;
+  color: white;
   display: inline-block;
   margin: 0 .75em;
   text-decoration: none;
@@ -433,7 +441,8 @@ h2.ep-list-features {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.25); }
 
 .setup-message .setup-button:hover {
-  color: #ffe8ed; }
+  color: #ffe8ed;
+  background-color: #B93431; }
 
 .setup-message .setup-button-primary {
   background-color: #fff;
