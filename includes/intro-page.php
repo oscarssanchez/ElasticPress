@@ -27,14 +27,14 @@ if ( defined( 'EP_IS_NETWORK' ) && EP_IS_NETWORK ) {
 				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>1</p>
 			</div>
 			<h2><?php esc_html_e( 'Plugin has been installed', 'elasticpress' ); ?></h2>
-			<p><?php esc_html_e( 'You\'ve taken your first step into a faster and more flexible search and query engine for WordPress', 'elasticpress' ); ?></p>
+			<p class="ep-copy-text"><?php esc_html_e( 'You\'ve taken your first step into a faster and more flexible search and query engine for WordPress', 'elasticpress' ); ?></p>
 		</div>
 		<div class="intro-box">
 			<div class="circle white-circle">
 				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>2</p>
 			</div>
 			<h2><?php esc_html_e( 'Setup hosting', 'elasticpress' ); ?></h2>
-			<p>
+			<p class="ep-copy-text">
 				<?php echo sprintf( __( 'The next step is to make sure you have a working ElasticSearch server, we recommend creating an %s account or if you want you can %s set%s %s up %s your own hosting', 'elasticpress' ),
 					'<a href="https://www.elasticpress.io/">ElasticPress.io</a>',
 					'<a href="#">',
@@ -49,7 +49,7 @@ if ( defined( 'EP_IS_NETWORK' ) && EP_IS_NETWORK ) {
 				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>3</p>
 			</div>
 			<h2><?php esc_html_e( 'Index your content', 'elasticpress' ); ?></h2>
-			<p><?php esc_html_e( 'Once you have hosting set up you are ready to start customising your content and search results', 'elasticpress' ); ?></p>
+			<p class="ep-copy-text"><?php esc_html_e( 'Once you have hosting set up you are ready to start customising your content and search results', 'elasticpress' ); ?></p>
 		</div>
 	</div>
 	<div class="setup-message">

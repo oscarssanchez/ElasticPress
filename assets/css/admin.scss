@@ -443,12 +443,6 @@ h2.ep-list-features {
 	line-height: 1.2;
 }
 
-@media (min-width: $tablet-width) {
-	.intro h2 {
-		line-height: 1.75;
-	}
-}
-
 .intro h1 {
 	text-align: center;
 }
@@ -461,18 +455,34 @@ h2.ep-list-features {
 	text-align: center;
 }
 
+.intro-box {
+	width: 33%;
+}
+
 .intro-container a {
 	font-weight: bold;
 }
 
 .intro-container h2 {
 	color: #626262;
+	height: 8%;
 }
 
+.intro-container p {
+	max-width: 300px;
+}
 
-.intro-box {
-	padding-left: 15px;
-	padding-right: 15px;
+.ep-copy-text {
+	padding: 0 15% 0 15%;
+}
+
+@media (max-width: $tablet-width) {
+	.intro-box {
+		width: auto;
+	}
+	.ep-copy-text {
+		padding: 0 9% 0 9%;
+	}
 }
 
 .circle {
@@ -506,8 +516,8 @@ h2.ep-list-features {
 	content: '';
 	position: absolute;
 	top: 2.9em;
-	left: -12.3em;
-	width: 13em;
+	left: -11.3em;
+	width: 14em;
 	height: .2em;
 	background: #d4d4d4;
 	z-index: -1;
@@ -515,7 +525,7 @@ h2.ep-list-features {
 
 @media (max-width: $tablet-width) {
 	.white-circle::before{
-		left: -9em;
+		left: -8em;
 	}
 }
 
