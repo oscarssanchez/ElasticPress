@@ -33,14 +33,10 @@ if ( defined( 'EP_IS_NETWORK' ) && EP_IS_NETWORK ) {
 			<div class="circle white-circle">
 				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>2</p>
 			</div>
-			<h2><?php esc_html_e( 'Setup hosting', 'elasticpress' ); ?></h2>
+			<h2><?php esc_html_e( 'Set up hosting', 'elasticpress' ); ?></h2>
 			<p class="ep-copy-text">
-				<?php echo sprintf( __( 'The next step is to make sure you have a working ElasticSearch server, we recommend creating an %s account or if you want you can %s set%s %s up %s your own hosting', 'elasticpress' ),
-					'<a href="https://www.elasticpress.io/">ElasticPress.io</a>',
-					'<a href="#">',
-					'</a> ',
-					'<a href="#">',
-					'</a>'
+				<?php echo sprintf( __( 'The next step is to make sure you have a working Elasticsearch server. We recommend creating an %s account or if you want you can set up your own hosting', 'elasticpress' ),
+					'<a href="https://www.elasticpress.io/">ElasticPress.io</a>'
 				); ?>
 			</p>
 		</div>
@@ -49,7 +45,13 @@ if ( defined( 'EP_IS_NETWORK' ) && EP_IS_NETWORK ) {
 				<?php esc_html_e( 'Step', 'elasticpress' ); ?><p>3</p>
 			</div>
 			<h2><?php esc_html_e( 'Index your content', 'elasticpress' ); ?></h2>
-			<p class="ep-copy-text"><?php esc_html_e( 'Once you have hosting set up you are ready to start customising your content and search results', 'elasticpress' ); ?></p>
+			<p class="ep-copy-text">
+				<?php echo sprintf( __( '%sClick here%s to index your content through ElasticPress. You can also activate optional Features such as Protected Content and Autosuggest in the %sSettings%s page', 'elasticpress' ),
+					'<a href="' . esc_url( admin_url( 'admin.php?page=elasticpress&do_sync' ) ) . '">',
+				'</a>',
+					'<a href="' . esc_url( admin_url( 'admin.php?page=elasticpress' ) ) . '">',
+					'</a>'
+				); ?>
 		</div>
 	</div>
 	<div class="setup-message">
